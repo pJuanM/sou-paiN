@@ -11,6 +11,9 @@
     .main-patrocinios-svg3 {
         display: none;
     }
+    footer .footer-form input {
+        width: 70vw;
+    }
     
 }
 @media (min-width: 310px) and (max-width:1024px) {
