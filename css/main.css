@@ -1,0 +1,158 @@
+main .main-banner {
+    display: block;
+    margin: 0 auto 15px auto;
+}
+.desktop-none {
+    display: none;
+}
+main .main-banner:hover {
+    opacity: .9;
+    transition: ease-out .5s;
+}
+main .main-colecao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+main .main-colecao-esquerda img:hover,
+main .main-colecao-direita img:hover {
+    transform: scale(1.020);
+    transition: ease-out .3s;
+}
+main .main-colecao-esquerda img,
+main .main-colecao-direita img {
+    max-width: 100%;
+    height: 460px;
+}
+main .main-colecao-esquerda,
+main .main-colecao-direita {
+    max-height: 460px;
+    overflow: hidden;
+}
+main .main-colecao-direita {
+    margin: 0px 15px;
+}
+main .main-infos {
+    display: flex;
+    justify-content: space-between;
+    fill: #ed2a48;
+    color: white;
+    margin: 55px auto;
+    max-width: 850px;
+}
+main .main-info1,
+main .main-info2,
+main .main-info3 {
+    display: flex;
+    align-items: center;
+}
+main .main-info1 span,
+main .main-info2 span,
+main .main-info3 span {
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 14px;
+}
+main  .main-produtos-secao {
+    padding: 40px 0px;
+    margin-bottom: 180px;
+}
+main  .main-produtos-secao h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 35px;
+    font-weight: 500;
+}
+main .main-produtos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .main-produtos a {
+    text-decoration: none;
+}
+main .main-produtos .main-produto-esquerda,
+main .main-produtos .main-produto-direita {
+    max-width: 276px;
+    max-height: 314px;
+    margin: 0 2px 10px;
+    position: relative;
+}
+main .main-produtos .main-produto-esquerda button,
+main .main-produtos .main-produto-direita button{
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    margin: 0 auto;
+    height: 42px;
+    width: 85%;
+    right: 0;
+    background-color: #ed2a48;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: ease-out .2s;
+}
+main .main-produtos .main-produto-esquerda:hover button,
+main .main-produtos .main-produto-direita:hover button {
+    visibility: visible;
+    opacity: 1;
+}
+main .main-produtos .main-produto-esquerda div,
+main .main-produtos .main-produto-direita div {
+    margin: 15px;
+}
+main .main-produtos .main-produto-esquerda img,
+main .main-produtos .main-produto-direita img {
+    width: 100%;
+    height: 100%;
+} 
+main .main-produtos .main-produto-titulo {
+    color: white;
+    margin-bottom: 23px;
+    font-size: 16px;
+    font-weight: 600;
+}
+main .main-produtos .main-produto-preco {
+    font-size: 1rem;
+    line-height: 1.38;
+    color: #8f8f8f;
+    margin-bottom: 5px;
+}
+main .main-produtos .main-produto-preco-antigo {
+    font-size: 13px;
+    text-decoration: line-through;
+}
+main .main-produtos .main-produto-oferta {
+    color: white;
+    font-size: 14px;
+}
+.main-patrocinios {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 120px 15px;
+}
+.main-patrocinios-svg1:hover,
+.main-patrocinios-svg2:hover,
+.main-patrocinios-svg3:hover,
+.main-patrocinios-svg4:hover,
+.main-patrocinios-svg5:hover{
+    opacity: .9;
+}
+.main-patrocinios div {
+    max-width: 220px;
+    max-height: 90px;
+}
+.main-patrocinios .main-patrocinios-svg4 {
+    width: 100%;
+    height: 100%;
+}
+.main-patrocinios .main-patrocinios-svg5 {
+    width: 88px;
+}

@@ -1,0 +1,21 @@
+main > section {
+    padding: 0 0.938rem;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+main > section > article > h1 {
+    font-size: 24px;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+}
+main > section > article > h2 {
+    color: rgb(237, 42, 72);
+    font-size: 16px;
+    font-weight: 400;
+}
+main > section > article > p {
+    color: white;
+    margin: 25px 0;
+    font-size: 16px;
+}

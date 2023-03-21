@@ -1,0 +1,69 @@
+main {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 0.938rem;
+}
+main > section h1,
+main > section p {
+    color: white;
+    text-align: center;
+}
+main > section h1 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+main > section p {
+    margin-bottom: 50px;
+}
+main > section > form {
+    display: flex;
+    flex-direction: column;
+}
+main > section > form label {
+    color: white;
+    font-size: 16px;
+    margin-top: 30px;
+}
+main > section > form >.main-section1-formulario-info-pessoal {
+    display: flex;
+    width: 100%;
+}
+main > section > form > .main-section1-formulario-info-pessoal > div {
+    width: 50%;
+}
+main > section > form > .main-section1-formulario-info-pessoal > div:first-child input {
+    width: 96%;
+}
+main > section > form > .main-section1-formulario-info-pessoal > div > input,
+main > section > form > textarea {
+    background: #363636;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 15px 8px;
+    color: white;
+    height: 50px;
+}
+main > section > form > textarea {
+    min-height: 150px;
+}
+main > section > form > button {
+    background: #ed2a48;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 1px;
+    max-width: 215px;
+    width: 100%;
+    height: 50px;  
+    line-height: 50px;
+    margin: 30px auto 40px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: ease-out .2s;
+    padding: 0;
+}
+main > section > form > button:hover {
+    background: #cc1935;
+}

@@ -1,0 +1,304 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 115px;
+}
+header .header-logo {
+    display: flex;
+    align-items: center;
+}
+header .header-logo h1 {
+    max-width: 240px;
+    margin-left: -207px ;
+}
+header .header-logo svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+header .header-navegacao {
+    margin-left: 110px;
+}
+header .header-navegacao .header-navegacao-lista {
+    list-style: none;
+    justify-content: space-around;
+    display: flex;
+    width: 100%;
+    gap: 40px;
+}
+header .header-navegacao ul li a {
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+    font-weight: 300;
+}
+header .header-navegacao ul li:hover a{
+    color:#ed2a48;;
+}
+header .header-navegacao ul li:hover:last-child a {
+    color: white;
+}
+.header-navegacao-dropdown {
+    position: relative;
+}
+.header-navegacao-dropdown svg {
+    width: 8px !important;
+    height: 8px !important;
+    position: absolute ;
+    right: -15px ;
+    top: 9px ;
+}
+.header-navegacao-segundo-nivel {
+    transition: ease-out .2s;
+    background: #1c1c1c;
+    position: absolute;
+    top: 32px;
+    width: 100%;
+    left: -20px;
+    right: 0;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+    z-index: 9;
+    min-width: 300px;
+    border-radius: 2px;
+    visibility: hidden;
+    opacity: 0;
+}
+.header-navegacao-segundo-nivel ul li:hover a {
+   color: #ed2a48 !important;
+}
+.header-navegacao-dropdown:hover .header-navegacao-segundo-nivel {
+    visibility: visible;
+    opacity: 1;
+    color: white;
+}
+.header-navegacao-segundo-nivel::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -9px;
+    border-bottom: 10px solid #1c1c1c;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    left: 15px;
+}
+.header-navegacao-segundo-nivel ul  {
+    text-align: left;
+    list-style: none;
+}
+.header-navegacao-segundo-nivel ul li {
+    line-height: 2rem;
+}
+header .header-usuario {
+    display: flex;
+    align-items: center;
+}
+header .header-usuario input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #888888;
+    width: 158px;
+    height: 30px;
+    margin-right: 2px;
+    color: #888888;
+}
+header .header-usuario .header-input-search {
+    width: 26px;
+    height: 26px;
+    margin-top: -5px;
+    cursor: pointer;
+}
+header .header-usuario .header-input-search:hover {
+    opacity: .8;
+}
+header .header-usuario .header-usuario-conta {
+    margin: 0 38px;
+    height: 31px;
+    position: relative;
+}
+header .header-usuario .header-usuario-conta:hover .header-usuario-conta-segundo-nivel  {
+    visibility: visible;
+    opacity: 1;
+}
+header .header-usuario-conta-segundo-nivel {
+    transition: ease-out .2s;
+    text-decoration: none;
+    width: 235px;
+    height: 128px;
+    background-color: #1c1c1c;
+    padding: 25px;
+    position: absolute;
+    right: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 40px;
+    visibility: hidden;
+    opacity: 0;
+}
+header .header-usuario-conta-segundo-nivel::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -9px;
+    border-bottom: 10px solid #1c1c1c;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    right: 12px;
+}
+header .header-usuario-conta-segundo-nivel-lista {
+    min-width: 195px;
+    text-align: center;
+}
+header .header-usuario-conta-segundo-nivel-lista .login,
+header .header-usuario-conta-segundo-nivel-lista .cadastro {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    width: 100%;
+}
+header .header-usuario-conta-segundo-nivel-lista .login {
+    background-color: #ed2a48;
+    display: block;
+    padding: 0 5px;
+    height: 45px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+header .header-usuario .header-usuario-sacola {
+    position: relative;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+header .header-usuario .header-usuario-sacola svg:hover {
+    opacity: .7;
+    transition: ease-out .3s;
+}
+header .header-usuario-sacola-abrir {
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+    background: #000000;
+    width: 440px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: right 0.3s ease-out;
+    right: -440px;
+    cursor: auto;
+}
+header .header-active {
+    visibility: visible;
+    right: 0;
+    z-index: 20;
+}
+header .header-fechar {
+    visibility: hidden;
+    right: -440px;
+    z-index: 0;
+}
+header .header-usuario-sacola-abrir-header{
+    background: #1c1c1c;
+    padding: 40px 0;
+    font-size: 1.37rem;
+    line-height: 1.5;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+header .header-usuario-sacola-abrir-header svg{
+    margin-left: 15px;
+    fill: white;
+    cursor: pointer;
+}
+header .header-usuario-sacola-abrir-header svg:hover {
+    transition: ease-in-out .5s;
+    transform: rotate(180deg);
+}
+header .header-usuario-sacola-abrir-header strong {
+    font-weight: 400;
+}
+header .header-usuario-sacola-abrir-itens {
+    width: 436px;
+    height: 80px;
+    background: black;
+}
+header .header-usuario-sacola-abrir-footer {
+    background: #1c1c1c;
+    padding: 40px 0;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #fff;
+    position: relative;
+}
+.block-text {
+    margin: 0 25px 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #5f5f5f;
+}
+header .header-usuario-sacola-abrir-header::after {
+    content: '';
+    display: block;
+    width: 360px;
+    height: 2px;
+    background-color: #ed2a48;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    margin: 0 auto;
+
+}
+header .header-usuario .header-usuario-sacola .header-usuario-sacola-svg {
+    margin-right: 4px;
+}
+header .header-usuario .header-usuario-sacola .header-usuario-sacola-contagem-produtos {
+    background-color: #ed2a48 ;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 23px;
+    height: 23px;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    font-size: 12px;
+}
+.finalizar-compra {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.finalizar-compra-infos {
+    font-size: 14px;
+    font-weight: 600;
+
+}
+.finalizar-compra-botao a {
+    width: 214px;
+    height: 60px;
+    border-radius: 2px;
+    background-color: #ed2a48;
+    font-size: 1.12rem;
+    font-weight: 700;
+    line-height: 60px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    transition: ease-out .2s;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+.finalizar-compra-botao a:hover { 
+    background-color: #cc1935;
+}
