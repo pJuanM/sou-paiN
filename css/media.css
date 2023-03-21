@@ -1,4 +1,19 @@
-@media (min-width: 431px) and (max-width:1024px) {
+@media(min-width:310px) {
+    main .main-colecao-esquerda img, main .main-colecao-direita img {
+        height: auto;
+    }
+    main .main-produtos .main-produto-esquerda button, main .main-produtos .main-produto-direita button {
+        display: none;
+    }
+    .main-patrocinio {
+        justify-content: space-evenly;
+    }
+    .main-patrocinios-svg3 {
+        display: none;
+    }
+    
+}
+@media (min-width: 310px) and (max-width:1024px) {
     .celular-none {
         display: none !important;
     }
@@ -57,9 +72,6 @@
         transition: left .3s ease-in;
         display: block;
     }
-
-
-
     .menu-active.mobile-menu {
         height: 100%;
         overflow-y: scroll;
@@ -85,9 +97,6 @@
     .menu-active.mobile-header-navegacao-dropdown ul  {
         display: block !important;
     }
-
-
-
     .mobile-login {
         position: relative;
         bottom: 0;
@@ -98,7 +107,6 @@
         width: 104%;
         display: none;
     }
-
     .active {
         left: 0;
         visibility: visible; 
@@ -188,10 +196,6 @@
     .mobile-login-segundo {
         right: 15px;
     }
-
-
-
-
     header .menu .line {
         height: 2px;
         width: 22px;
@@ -216,7 +220,6 @@
     .main-banner {
         width: 100%;
     }
-
     main .main-colecao {
         display: block;
     }
@@ -254,7 +257,6 @@
     .main-patrocinios-svg5{
         display: none;
     }
-
     .to-top {
         background-color: #1c1c1c;
         color: #888888;
@@ -264,7 +266,6 @@
         font-weight: 600;
         border: none;
     }
-
     footer .footer-section-primaria {
         display: flex;
         margin: 45px 0 25px;
@@ -310,7 +311,6 @@
     .icon-rotate{
         transform: rotateZ(180deg);
     }
-
 }
 
 
@@ -341,6 +341,19 @@
     }
 
 }
+@media (min-width: 767px) {
+    main .main-colecao-direita {
+        margin: 0 15px;
+    }
+    main .main-colecao-esquerda img, main .main-colecao-direita img {
+        height: auto;
+    }
+    main .main-colecao {
+        display: flex;
+        width: 100%;
+        margin-top: 15px;
+    }
+}
 @media (min-width: 860px) {
     .main-patrocinios-svg5 {
         display: block;
@@ -348,7 +361,6 @@
 }
 
 @media (min-width: 1025px) and (max-width: 1320px) {
-
     header .header-logo h1 {
         max-width: 230px;
     }
@@ -368,46 +380,24 @@
         width: 100%;
         gap: 30px;
     }
-
-    
     main .main-banner {
         display: block;
         margin: 0 auto 15px auto;
         width: 100%;
-    }
-    
-    
+    }  
 }
 @media (min-width: 1025px) and (max-width: 1075px) {
-    
     #menu-superior {
         margin-right: 15px;
         margin-left: 0px; 
     }
-
     header .header-navegacao .header-navegacao-lista {
         list-style: none;
         display: flex;
         width: 100%;
         gap: 15px;
     }
-
     header .header-logo h1 {
         max-width: 230px;
     }
 }
-
-@media (min-width: 767px) {
-    main .main-colecao-direita {
-        margin: 0 15px;
-    }
-    main .main-colecao-esquerda img, main .main-colecao-direita img {
-        height: auto;
-    }
-    main .main-colecao {
-        display: flex;
-        width: 100%;
-        margin-top: 15px;
-    }
-}
-
